@@ -8,7 +8,7 @@ stage('build'){
 steps{
 sh' echo "skipping build stage" '
 // sh "mvn clean package"
-sh "mvn clean install -Dmaven.test.skip=true"
+sh "mvn package -Dmaven.test.skip=true"
 }
 }
 }
